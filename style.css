@@ -1,0 +1,272 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 222, 222);
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(173, 171, 171);
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.header__inner{
+    display: flex;
+}
+.header__info{
+    width: 250px;
+    height: 250px;
+    border: 4px solid rgb(58, 48, 75);;
+    border-radius: 50%;
+    margin: 100px 50px 100px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px 1px rgb(126, 125, 125) ;
+}
+.header__photo{
+    background-image: url('images/igor.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.header__name{
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 150px 100px;
+}
+.header__prof{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.exp{
+    color: #fff;
+}
+.exp__inner{
+    height: 100%;
+    background-color: rgb(58, 48, 75);
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px 1px rgb(126, 125, 125) ;
+    padding: 20px 20px;
+}
+.exp__title{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom:  3px solid #fff;
+    color: #fff;
+}
+.exp__text{
+    padding-bottom: 10px;
+}
+
+.information__inner{
+    display: flex;
+    position: relative;
+}
+
+.information__aside{
+    width: 250px;
+    background-color: rgb(58, 48, 75);
+    box-shadow: 5px 5px 10px 1px rgb(126, 125, 125) ;
+}
+.information__educat{
+    padding: 20px 20px;
+}
+.information__title{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom:  3px solid #fff;
+    color: #fff;
+}
+.information__number{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.information__text{
+    margin-top: 10px;
+    color: #fff;
+}
+.social{
+    background-color: #fff;
+    margin-left: 20px;
+    padding: 20px 20px;
+    width: 100%;   
+    box-shadow: 5px 5px 10px 1px rgb(126, 125, 125) ;
+}
+.social__item{
+    display: flex;
+}
+.social__item img{
+    width: 30px;
+    height: 30px;
+}
+.social__item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.social__title{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom:  3px solid gray;
+}
+.social__text{
+    padding: 5px 20px;
+    font-size: 17px;
+}
+
+.git__link{
+    background-color: rgb(58, 48, 75);
+    margin: 20px 0 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 20px;
+    box-shadow: 5px 5px 10px 1px rgb(126, 125, 125) ;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.prof{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.prof__inner{
+    display: flex;
+}
+.prof__skills-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom:  3px solid #fff;
+    
+}
+.prof__skills-list li{
+    margin: 20px 0px;
+}
+.prof__skills{
+    width: 240px;
+    padding: 20px 20px;
+    background-color: rgb(58, 48, 75);
+    color: #fff;
+    box-shadow: 5px 5px 10px 1px rgb(126, 125, 125) ;
+}
+
+.prof__portfilio{
+    background-color: #fff;
+    margin-left: 20px;
+    padding: 20px 20px;
+    width: 100%;
+    box-shadow: 5px 5px 10px 1px rgb(126, 125, 125) ;
+}
+.prof__portfilio-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom:  3px solid gray;
+}
+.prof__portfilio_list li{
+    max-width: 100%;
+    margin: 10px 0px 10px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 100px 10px;
+    cursor: pointer;
+}
+.prof__portfilio_list li:hover{
+    background-color: gray;
+}
+.prof__portfilio-inner{
+    display: flex;
+}
+.prof__portfilio-git li{
+    max-width: 100%;
+    margin: 10px 0px 10px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 100px 10px;
+    cursor: pointer;
+}
+.prof__portfilio-git li:hover{
+    background-color: gray;
+}
+
+@media (max-width: 1000px){
+    .header__inner{
+        flex-wrap: wrap;
+    }
+    .header__info{
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .header__name{
+        text-align: center;
+        margin-top: 100px;
+    }
+}
+@media (max-width: 900px){
+    .information__inner{
+        flex-wrap: wrap;
+    }
+    .information__aside{
+        width: 100%;
+    }
+    .social{
+        margin: 20px 0 0;
+    }
+    .prof__inner{
+        flex-wrap: wrap;
+    }
+    .prof__skills{
+        width: 100%;
+    }
+    .prof__portfilio{
+        margin: 20px 0 0;
+    }
+}
+@media (max-width: 700px){
+    .header__info{
+        margin-bottom: 50px;
+    }
+    .header__name{
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    .header__prof{
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+  
